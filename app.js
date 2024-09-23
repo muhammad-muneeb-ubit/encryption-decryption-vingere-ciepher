@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (plainText && key) {
         const encryptedText = vigenereCipher(plainText, key, true);
         outputDiv.textContent = "Encrypted Text: " + encryptedText;
+        console.log(plainText);
         console.log(encryptedText);
       } else {
         alert("Please enter both text and a key to encrypt.");
